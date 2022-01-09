@@ -92,7 +92,7 @@ def attack():
     
     # 处理加密帧格式
     for i in range(21):
-        f = open('./Frame' + str(i))
+        f = open('./Frames/Frame' + str(i))
         s = f.read()
         n.append(int(s[:256], 16))
         e.append(int(s[256:512], 16))
